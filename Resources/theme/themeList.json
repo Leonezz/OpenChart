@@ -1,0 +1,12 @@
+{
+    "nameList":[
+        "vintage","dark","infographic","macarons","roma","shine"
+    ],
+
+    "vintage":"../js/theme/vintage.js",
+    "dark":"../js/theme/dark.js",
+    "infographic":"../js/theme/infographic.js",
+    "macarons":"../js/theme/macarons.js",
+    "roma":"../js/theme/roma.js",
+    "shine":"../js/theme/shine.js"
+}

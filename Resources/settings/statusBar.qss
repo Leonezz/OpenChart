@@ -1,0 +1,30 @@
+QStatusBar
+{
+    background-color: rgb(0,122,204);
+    color:rgb(208,208,208);
+}
+QStatusBar::item {
+    margin:0;
+    border:0;
+}
+QStatusBar>QLabel#CurrentTypeLabel {
+    font-family:source code pro;
+    margin:-2px;
+    padding:4px;
+    background-color:rgb(22,130,93);
+    color:rgb(208,208,208);
+}
+QStatusBar>QLabel:hover#CurrentTypeLabel {
+    background-color:rgb(50,145,113);
+}
+QStatusBar>QPushButton#Github {
+    border:none;
+    padding:0;
+    margin:0;
+    background:transparent;
+    image:url(./Resources/icon/title/svg/github.svg);
+}
+QStatusBar>QPushButton:hover#Github {
+    border:none;
+    background-color:rgb(50,145,113);
+}

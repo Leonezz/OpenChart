@@ -1,0 +1,11 @@
+QTextEdit
+{    
+    border:none;
+    background-color: rgb(37,37,38);
+    color: rgb(214,207,154);
+    margin:0px 0px 1px 0px;
+}
+QTextEdit:focus {
+    border:1px solid;
+    border-color:rgb(0,122,204);
+}

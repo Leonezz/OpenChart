@@ -1,0 +1,20 @@
+1.data项为二维数组：
+    data:[
+        [x,y,z].......
+    ]
+    其中,y值先保持不变,先完成x值的循环后改变y值然后重复x值的循环
+    对于同一y值的一组数组,排在数组前面位置的数组x值不能大于后面位置的x值:
+        即:[
+            [x1,y,z],[x2,y,z]   //x1<x2;
+        ]   
+    code:
+        function surfaceData(){
+            var result=[];
+            for(var y=min;y<=max;++y){
+                for(var x=min;x<=max;++x){
+                    var point=[x,y,z];
+                    result.push(point);
+                }
+            }
+            return result;
+        }

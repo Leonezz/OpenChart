@@ -1,0 +1,783 @@
+{
+    "legend": [
+        {
+            "bottom": 10,
+            "data": [
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028"
+            ],
+            "type": "scroll"
+        }
+    ],
+    "radar": [
+        {
+            "indicator": [
+                {
+                    "max": 400,
+                    "text": "IE8-"
+                },
+                {
+                    "max": 400,
+                    "text": "IE9+"
+                },
+                {
+                    "max": 400,
+                    "text": "Safari"
+                },
+                {
+                    "max": 400,
+                    "text": "Firefox"
+                },
+                {
+                    "max": 400,
+                    "text": "Chrome"
+                }
+            ]
+        }
+    ],
+    "series": [
+        {
+            "data": [
+                {
+                    "name": "2001",
+                    "value": [
+                        390,
+                        208,
+                        15,
+                        9,
+                        0.5
+                    ]
+                }
+            ],
+            "emphasis": {
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2002",
+                    "value": [
+                        380,
+                        204,
+                        20,
+                        18,
+                        2
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2003",
+                    "value": [
+                        370,
+                        200,
+                        25,
+                        27,
+                        4.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2004",
+                    "value": [
+                        360,
+                        196,
+                        30,
+                        36,
+                        8
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2005",
+                    "value": [
+                        350,
+                        192,
+                        35,
+                        45,
+                        12.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2006",
+                    "value": [
+                        340,
+                        188,
+                        40,
+                        54,
+                        18
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2007",
+                    "value": [
+                        330,
+                        184,
+                        45,
+                        63,
+                        24.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2008",
+                    "value": [
+                        320,
+                        180,
+                        50,
+                        72,
+                        32
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2009",
+                    "value": [
+                        310,
+                        176,
+                        55,
+                        81,
+                        40.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2010",
+                    "value": [
+                        300,
+                        172,
+                        60,
+                        90,
+                        50
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2011",
+                    "value": [
+                        290,
+                        168,
+                        65,
+                        99,
+                        60.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2012",
+                    "value": [
+                        280,
+                        164,
+                        70,
+                        108,
+                        72
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2013",
+                    "value": [
+                        270,
+                        160,
+                        75,
+                        117,
+                        84.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2014",
+                    "value": [
+                        260,
+                        156,
+                        80,
+                        126,
+                        98
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2015",
+                    "value": [
+                        250,
+                        152,
+                        85,
+                        135,
+                        112.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2016",
+                    "value": [
+                        240,
+                        148,
+                        90,
+                        144,
+                        128
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2017",
+                    "value": [
+                        230,
+                        144,
+                        95,
+                        153,
+                        144.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2018",
+                    "value": [
+                        220,
+                        140,
+                        100,
+                        162,
+                        162
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2019",
+                    "value": [
+                        210,
+                        136,
+                        105,
+                        171,
+                        180.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2020",
+                    "value": [
+                        200,
+                        132,
+                        110,
+                        180,
+                        200
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2021",
+                    "value": [
+                        190,
+                        128,
+                        115,
+                        189,
+                        220.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2022",
+                    "value": [
+                        180,
+                        124,
+                        120,
+                        198,
+                        242
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2023",
+                    "value": [
+                        170,
+                        120,
+                        125,
+                        207,
+                        264.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2024",
+                    "value": [
+                        160,
+                        116,
+                        130,
+                        216,
+                        288
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2025",
+                    "value": [
+                        150,
+                        112,
+                        135,
+                        225,
+                        312.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2026",
+                    "value": [
+                        140,
+                        108,
+                        140,
+                        234,
+                        338
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2027",
+                    "value": [
+                        130,
+                        104,
+                        145,
+                        243,
+                        364.5
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        },
+        {
+            "data": [
+                {
+                    "name": "2028",
+                    "value": [
+                        120,
+                        100,
+                        150,
+                        252,
+                        392
+                    ]
+                }
+            ],
+            "emphasis": {
+                "areaStyle": {
+                    "color": "rgba(0,250,0,0.3)"
+                }
+            },
+            "lineStyle": {
+                "width": 1
+            },
+            "name": "浏览器（数据纯属虚构）",
+            "symbol": "none",
+            "type": "radar"
+        }
+    ],
+    "title": [
+        {
+            "left": 10,
+            "subtext": "纯属虚构",
+            "text": "浏览器占比变化",
+            "top": 10
+        }
+    ],
+    "tooltip": [
+        {
+            "trigger": "item"
+        }
+    ],
+    "visualMap": [
+        {
+            "calculable": true,
+            "right": 10,
+            "top": "middle"
+        }
+    ]
+}

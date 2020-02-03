@@ -1,0 +1,40 @@
+QToolBar {
+    background-color: rgb(51,51,51);
+    spacing: 3px; /* spacing between items in the tool bar */
+}
+QToolBar>QPushButton {
+    border:none;
+    margin:4px,0px,4px,0px;
+    padding:6px;
+}
+QPushButton#Resources {
+    image:url(./Resources/icon/title/svg/folder_bfbfbf_200.svg);
+}
+QPushButton#Serach {
+    image:url(./Resources/icon/title/svg/search_bfbfbf_200.svg);
+}
+QPushButton#ChartType {
+    image:url(./Resources/icon/title/svg/menu_bfbfbf_200.svg);
+}
+QPushButton#Edit {
+    image:url(./Resources/icon/title/svg/edit_bfbfbf_200.svg);
+}
+QPushButton#Setting {
+    image:url(./Resources/icon/title/svg/setting_bfbfbf_200.svg);
+}
+
+QPushButton:hover#Resources {
+    image:url(./Resources/icon/title/svg/folder_e6e6e6_200.svg);
+}
+QPushButton:hover#Serach {
+    image:url(./Resources/icon/title/svg/search_e6e6e6_200.svg);
+}
+QPushButton:hover#ChartType {
+    image:url(./Resources/icon/title/svg/menu_e6e6e6_200.svg);
+}
+QPushButton:hover#Edit {
+    image:url(./Resources/icon/title/svg/edit_e6e6e6_200.svg);
+}
+QPushButton:hover#Setting {
+    image:url(./Resources/icon/title/svg/setting_ffffff_200.svg);
+}

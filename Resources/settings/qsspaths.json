@@ -1,0 +1,20 @@
+{
+    "nameList":[
+        "comboBox","commandLineWidget","dockWidget","lineEditor","menuBar","otherPublic","treeWidget","pushButton",
+        "scrollBar","statusBar","tabBar","titleBar","toolBar","treeViewPublic"
+    ],
+    "comboBox":"./Resources/settings/comboBox.qss",
+    "commandLineWidget":"./Resources/settings/commandLineWidget.qss",
+    "dockWidget":"./Resources/settings/dockWidget.qss",
+    "lineEditor":"./Resources/settings/lineEditor.qss",
+    "menuBar":"./Resources/settings/menuBar.qss",
+    "otherPublic":"./Resources/settings/otherPublic.qss",
+    "treeWidget":"./Resources/settings/TreeWidget.qss",
+    "pushButton":"./Resources/settings/pushButton.qss",
+    "scrollBar":"./Resources/settings/scrollBar.qss",
+    "statusBar":"./Resources/settings/statusBar.qss",
+    "tabBar":"./Resources/settings/tabBar.qss",
+    "titleBar":"./Resources/settings/titleBar.qss",
+    "toolBar":"./Resources/settings/toolBar.qss",
+    "treeViewPublic":"./Resources/settings/treeViewPublic.qss"
+}

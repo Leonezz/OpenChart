@@ -1,0 +1,218 @@
+{
+    "tooltip": [{
+        "formatter": "{a} <br/>{c} {b}"
+    }],
+    "toolbox": [
+        {
+            "feature": {
+                "saveAsImage": {},
+                "restore": {},
+                "dataView": {}
+            }
+        }
+    ],
+    "series": [
+        {
+            "name": "速度",
+            "type": "gauge",
+            "z": 3,
+            "min": 0,
+            "max": 220,
+            "splitNumber": 11,
+            "radius": "65%",
+            "axisLine": {
+                "lineStyle": {
+                    "width": 10
+                }
+            },
+            "axisTick": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "splitLine": {
+                "length": 20,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "axisLabel": {
+
+                "borderRadius": 2,
+                "padding": 3,
+                "textShadowBlur": 1,
+                "textShadowOffsetX": 1,
+                "textShadowOffsetY": 1
+            },
+            "title": {
+                "color":"auto",
+                "fontWeight": "bolder",
+                "fontSize": 20,
+                "fontStyle": "italic"
+            },
+            "detail": {
+                "fontWeight": "bolder",
+                "borderRadius": 3,
+                "shadowBlur": 5,
+                "shadowOffsetX": 0,
+                "shadowOffsetY": 3,
+                "borderWidth": 2,
+                "textBorderWidth": 2,
+                "textShadowBlur": 2,
+                "textShadowOffsetX": 0,
+                "textShadowOffsetY": 0,
+                "fontFamily": "Arial",
+                "width": "50%",
+                "rich": {}
+            },
+            "data": [
+                {
+                    "value": 40,
+                    "name": "km/h"
+                }
+            ]
+        },
+        {
+            "name": "转速",
+            "type": "gauge",
+            "center": [
+                "20%",
+                "55%"
+            ],
+            "radius": "45%",
+            "min": 0,
+            "max": 7,
+            "endAngle": 45,
+            "splitNumber": 7,
+            "axisLine": {
+                "lineStyle": {
+                    "width": 8
+                }
+            },
+            "axisTick": {
+                "length": 12,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "splitLine": {
+                "length": 20,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "pointer": {
+                "width": 5
+            },
+            "title": {
+                "color":"auto",
+                "offsetCenter": [
+                    "5%",
+                    "-30%"
+                ]
+            },
+            "detail": {
+                "fontWeight": "bolder"
+            },
+            "data": [
+                {
+                    "value": 1.5,
+                    "name": "x1000 r/min"
+                }
+            ]
+        },
+        {
+            "name": "油表",
+            "type": "gauge",
+            "center": [
+                "77%",
+                "50%"
+            ],
+            "radius": "35%",
+            "min": 0,
+            "max": 2,
+            "startAngle": 135,
+            "endAngle": 45,
+            "splitNumber": 2,
+            "axisLine": {
+                "lineStyle": {
+                    "width": 8
+                }
+            },
+            "axisTick": {
+                "splitNumber": 5,
+                "length": 10,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "axisLabel": {},
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "pointer": {
+                "width": 2
+            },
+            "title": {
+                "show": false
+            },
+            "detail": {
+                "show": false
+            },
+            "data": [
+                {
+                    "value": 0.5,
+                    "name": "gas"
+                }
+            ]
+        },
+        {
+            "name": "水表",
+            "type": "gauge",
+            "center": [
+                "77%",
+                "50%"
+            ],
+            "radius": "35%",
+            "min": 0,
+            "max": 2,
+            "startAngle": 315,
+            "endAngle": 225,
+            "splitNumber": 2,
+            "axisLine": {
+                "lineStyle": {
+                    "width": 8
+                }
+            },
+            "axisTick": {
+                "show": false
+            },
+            "axisLabel": {},
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "pointer": {
+                "width": 2
+            },
+            "title": {
+                "show": false
+            },
+            "detail": {
+                "show": false
+            },
+            "data": [
+                {
+                    "value": 0.5,
+                    "name": "gas"
+                }
+            ]
+        }
+    ]
+}

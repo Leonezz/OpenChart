@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="/Resources/js/connect.js" charset="utf-8"></script>
+        <script src="/Resources/js/echarts.js"></script>
+        <script src="/Resources/js/scatterOption.js"></script>
+        <script src="/Resources/js/qwebchannel.js"></script>
+    </head>
+    <body>
+        <div id="chartDom" style="position: absolute; width: 98%; height: 98%;"></div>
+        <script type="text/javascript">
+            var myChart=echarts.init(document.getElementById("chartDom"));
+            myChart.setOption(option);
+
+            window.onresize = myChart.resize;   //resize chart
+
+            window.onload=connectQt();
+
+        </script>
+    </body>
+</html>

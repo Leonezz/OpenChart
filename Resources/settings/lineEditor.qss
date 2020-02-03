@@ -1,0 +1,15 @@
+QLineEdit {
+    border: 1px solid;
+    border-color:rgb(63,63,70);
+    border-radius: 1px;
+    padding: 1px 18px 1px 3px;
+    margin:1px 0px 1px 0px;
+    min-width: 6em;
+    background-color:rgb(37,37,38);
+    color:rgb(214,207,154);
+}
+QLineEdit:hover {
+    border:2px solid;
+    border-color:rgb(0,122,204);
+}
+

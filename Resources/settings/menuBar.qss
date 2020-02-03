@@ -1,0 +1,57 @@
+
+QMenuBar#MenuBar
+{
+    background-color: rgb(51,51,51);
+    color: rgb(208, 208, 208);
+    font-family: Microsoft YaHei UI;
+}
+
+QMenuBar::item#MenuBar {
+    spacing: 5px; /* spacing between menu bar items */
+    background: transparent;
+    border:none;
+    margin-top:7px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+QMenuBar::item:selected#MenuBar { /* when selected using mouse or keyboard */
+    background-color: rgb(71,71,72);
+}
+
+QMenuBar::item:pressed#MenuBar {
+    background-color:rgb(71,71,72);
+    color:(230,230,230);
+}
+
+QMenu {
+    padding:1px;
+    background-color: rgb(64, 65, 66);
+    color:rgb(208,208,208);
+}
+
+QMenu::item {
+    padding: 2px 25px 2px 20px;
+    border: 1px solid transparent; /* reserve space for selection border */
+}
+
+QMenu::item:selected {
+    background-color:rgb(51, 51, 52)
+}
+
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+    background: gray;
+    border: 1px inset gray;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+
+QMenu::separator {
+    height: 2px;
+    background: lightblue;
+    margin-left: 10px;
+    margin-right: 5px;
+}

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/OpenChart_demo">
+        <file>openchart_widget.ui</file>
+    </qresource>
+</RCC>

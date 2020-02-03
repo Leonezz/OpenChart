@@ -1,0 +1,102 @@
+{
+    "toolbox": [
+        {
+            "feature": {
+                "saveAsImage": {},
+                "restore": {},
+                "dataView": {}
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "BoxPlot Example",
+            "left": "left"
+        }
+    ],
+    "tooltip": [
+        {
+            "trigger": "item",
+            "axisPointer": {
+                "type": "shadow"
+            }
+        }
+    ],
+    "xAxis": [
+        {
+            "type": "category",
+            "data": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "boundaryGap": true,
+            "nameGap": 30,
+            "splitArea": {
+                "show": false
+            },
+            "axisLabel": {
+                "formatter": "expr {value}"
+            },
+            "splitLine": {
+                "show": false
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "splitArea": {
+                "show": false
+            }
+        }
+    ],
+    "series": [
+        {
+            "itemStyle": {
+                "color": "rgb(0,0,0,0)"
+            },
+            "name": "boxplot",
+            "type": "boxplot",
+            "data": [
+                [
+                    650,
+                    857.5,
+                    955,
+                    995,
+                    1070
+                ],
+                [
+                    760,
+                    802.5,
+                    865,
+                    930,
+                    960
+                ],
+                [
+                    620,
+                    840,
+                    860,
+                    880,
+                    970
+                ],
+                [
+                    720,
+                    772.5,
+                    830,
+                    887.5,
+                    920
+                ],
+                [
+                    740,
+                    810,
+                    815,
+                    870,
+                    950
+                ]
+            ]
+        }
+    ]
+}

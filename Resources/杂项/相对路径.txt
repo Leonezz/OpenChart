@@ -1,0 +1,6 @@
+相对路径：
+    1：当前路径为目标路径的父级路径的，如：C:/workspace/resources/。只需在C:/workspace/ 
+        下引入相对路径"./resources/"或"resources/"
+    2:当前路径为目标路径的同级路径的，如：C:/workspace/resources_1/。只需在C:/workspace/resources_2/
+        下引入相对路径"../resources_2/"。 "../"表示父级路径
+

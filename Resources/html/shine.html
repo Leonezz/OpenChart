@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="../echart/echarts.js"></script>
+        <script src="../echart/echarts-gl.js"></script>
+        <script src="../connectchannel/qwebchannel.js"></script>
+        <script src="../connectchannel/connect.js" charset="utf-8"></script>
+
+        <script src="../theme/shine.js"></script>          <!--shine theme-->
+
+    </head>
+    <body>
+        <div id="chartDom" style="position: absolute; width: 98%; height: 98%;"></div>
+        <script type="text/javascript">
+            var dom=document.getElementById("chartDom");
+            var myChart=echarts.init(document.getElementById("chartDom"),'shine');
+            //myChart.setOption(option);
+            window.onresize=myChart.resize;//resize events
+            window.onload=connectQt();
+        </script>
+    </body>
+</html>

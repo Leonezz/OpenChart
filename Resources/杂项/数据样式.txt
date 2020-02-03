@@ -1,0 +1,52 @@
+line:
+            series
+    name    value
+
+bar:
+            series
+    name    value
+
+pie:
+    name    value
+
+scatter:
+    x   y  
+
+flow:
+    x   y   vx  vy
+
+KLine:
+    date    code    open    high    low     close   
+
+radar:
+                    name
+    indicator       value
+
+tree:treemap:sun:
+    lefttree_index      name    value    depth
+
+boxplot
+            series
+    name    value
+
+heatmap:
+    x   y   z
+
+parallel coordinates:
+    [ ]
+
+relation:
+    name    value   source  target
+
+sankey:
+    name    source  target  value
+ 
+funnel:
+            series
+    name    value
+
+river:
+    x   y   z
+
+3DScatter:bar3D:line3D:surface3D:
+    x   y   z

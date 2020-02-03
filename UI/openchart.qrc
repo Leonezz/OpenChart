@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/chart">
+        <file>../Resources/icon/图表/3D.png</file>
+        <file>../Resources/icon/图表/K线图.png</file>
+        <file>../Resources/icon/图表/饼图.png</file>
+        <file>../Resources/icon/图表/地理坐标图.png</file>
+        <file>../Resources/icon/图表/关系图.png</file>
+        <file>../Resources/icon/图表/盒须图.png</file>
+        <file>../Resources/icon/图表/矩形树图.png</file>
+        <file>../Resources/icon/图表/雷达图.png</file>
+        <file>../Resources/icon/图表/漏斗图.png</file>
+        <file>../Resources/icon/图表/平行坐标系.png</file>
+        <file>../Resources/icon/图表/热力图.png</file>
+        <file>../Resources/icon/图表/日历坐标系.png</file>
+        <file>../Resources/icon/图表/散点图.png</file>
+        <file>../Resources/icon/图表/桑基图.png</file>
+        <file>../Resources/icon/图表/树图.png</file>
+        <file>../Resources/icon/图表/数据集.png</file>
+        <file>../Resources/icon/图表/旭日图.png</file>
+        <file>../Resources/icon/图表/仪表盘.png</file>
+        <file>../Resources/icon/图表/折线图.png</file>
+        <file>../Resources/icon/图表/主题河流图.png</file>
+        <file>../Resources/icon/图表/柱状图.png</file>
+    </qresource>
+    <qresource prefix="/menu">
+        <file>../Resources/icon/菜单/file.png</file>
+        <file>../Resources/icon/菜单/open.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>main-128.ico</file>
+        <file>yes_1296db_200.svg</file>
+        <file>loading.gif</file>
+    </qresource>
+</RCC>

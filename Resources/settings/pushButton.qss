@@ -1,0 +1,38 @@
+QPushButton#ColorPickerButton {
+    border: 1px solid;
+    border-color:rgb(63,63,70);
+    border-radius: 1px;
+    background-color:rgb(37,37,38);
+    /*font-family:Microsoft YaHei UI;
+    font-size:11px;
+    color:rgb(208,208,208);*/
+    
+    margin:1px 0px 1px 0px;
+}
+
+QPushButton:hover#ColorPickerButton {
+    border:2px solid;
+    border-color:rgb(0,122,204);
+}
+
+QPushButton:flat#ColorPickerButton {
+    border: none; /* no border for a flat push button */
+}
+
+QPushButton:default#ColorPickerButton {
+    border-color: navy; /* make the default button prominent */
+}
+
+QPushButton#OpenFolder {
+    width:146px;
+    margin:50px;
+    padding:5px;
+    border:none;
+    color:rgb(208,208,208);
+    background-color:rgb(14,99,156);
+}
+QPushButton:hover#OpenFolder {
+    border:none;
+    color:rgb(208,208,208);
+    background-color:rgb(17,116,182);
+}

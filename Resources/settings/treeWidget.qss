@@ -1,0 +1,37 @@
+QTreeWidget
+{
+    border:none;
+    background-color: rgb(37,37,38);
+    color:rgb(208,208,208);
+    font-family:Microsoft YaHei UI;
+}
+QTreeWidget::corner  {
+    background-color:rgb(62,62,66);
+}
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings  {
+        border-image: none;
+        image: url(./Resources/icon/title/svg/packup_e6e6e6_200.svg);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+        border-image: none;
+        image: url(./Resources/icon/title/svg/expand_e6e6e6_200.svg);
+}
+QTreeWidget>QCheckBox {
+    spacing: 5px;
+}
+
+QTreeWidget>QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(./Resources/icon/titlebar/checkbox_unchecked.svg);
+}
+
+QCheckBox::indicator:checked {
+    image: url(./Resources/icon/titlebar/checkbox_checked.svg);
+}
