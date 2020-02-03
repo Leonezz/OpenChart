@@ -5,7 +5,7 @@ README [English](https://github.com/Leonezz/OpenChart/blob/master/README.md) | [
 
 A Qt and ECharts study project.
 
-![logo](https://raw.githubusercontent.com/Leonezz/OpenChart/master/resource/main-128.ico)  
+![logo](https://raw.githubusercontent.com/Leonezz/OpenChart/master/Resources/icon/../../../../../../../ExampleImg/3D&#32;Line.pngmain-128.ico)  
 
 
 
