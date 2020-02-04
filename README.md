@@ -22,6 +22,7 @@ A short introduction of ECharts:
 ## Adapted Environment
 
 [Qt 5.13.1 MSVC 2017 (64-bit)](https://www.qt.io/cn)
+
 [Visual Studio 2019(Community)](https://visualstudio.microsoft.com/zh-hans/vs/)
 
 ## Install 
