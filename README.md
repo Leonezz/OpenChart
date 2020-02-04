@@ -13,15 +13,16 @@ A Qt and ECharts study project.
 
 When I study Qt, I code on this project.
 
-This project is actually a software that makes charts based on the data from the user. And the kernel of this project is a open source project named [ECharts](https://github.com/apache/incubator-echarts).
+This project is actually a software that makes charts based on data from the user. And the kernel of this project is a open source project named [ECharts](https://github.com/apache/incubator-echarts).
 
-A short introduction of EChart:
+A short introduction of ECharts:
 
 >    ECharts is a free, powerful charting and visualization library offering an easy way of adding intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender,  which is a whole new lightweight canvas library.
 
 ## Adapted Environment
 
 [Qt 5.13.1 MSVC 2017 (64-bit)](https://www.qt.io/cn)
+[Visual Studio 2019(Community)](https://visualstudio.microsoft.com/zh-hans/vs/)
 
 ## Install 
 
@@ -79,7 +80,7 @@ You can download the released zip of this softwore from the release page, or you
 
 ## License
 
-OpenChart is available under the [BSD 2-Clause](https://github.com/Leonezz/OpenChart/blob/master/LICENSE) license.
+OpenChart is available under the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
 
 
 
