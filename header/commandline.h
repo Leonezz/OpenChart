@@ -39,11 +39,7 @@ private:
 	void set_font(const QString& font);
 	void set_font_size(const QString& size);
 	void errorCommand(const QString& invalidCommand);
-private:
 	const QString readLine();
 private:
 	JsonObject* JsonObj;
-
-
-
 };

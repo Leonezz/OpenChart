@@ -34,7 +34,6 @@ void TitleBar::mousePressEvent(QMouseEvent* event)
 
 void TitleBar::mouseMoveEvent(QMouseEvent* event)
 {
-	
 #ifdef Q_OS_WIN
 	if (ReleaseCapture())
 	{

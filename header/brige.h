@@ -25,12 +25,10 @@ public:
 */
 signals:
 	void sendMsg(const QString& text);
-signals:
 	void showLoading();		//show loading signal from Qt side.
-signals:
 	void connected();
-signals:
 	void Error(const int error);
+	
 public slots:
 	/*
 		this slot will be called by the HTML side.

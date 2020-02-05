@@ -54,7 +54,6 @@ private:
 public slots:
 	void openFile();
 	void saveFile();
-
 	void plotSlot(const QString& name);
 	void chartThemeChangeSlot(const QString& theme);
 	void optionChangedSlot();
@@ -93,12 +92,9 @@ signals:
 	void nowChartTheme(const QString& themeName);
 	void loadFileInNewThreadSignal(const QString& path,const int type);
 	void webViewLoad(QUrl url);
-signals:
 	void sendMsgSignal(const QString& msg);
 	void jsErrorSignal(const int error);
-signals:
 	void chartShowLoadingSignal();
-signals:
 	void updateStatusBarSignal();
 private slots:
 	//when opened file is a json file, call this spacial function
@@ -118,7 +114,5 @@ private:
 	FileModelView* fileView;
 	WebViewInNewThread* webView;
 };
-
-
 
 #pragma execution_character_set("utf-8")	//set char-set to utf-8
