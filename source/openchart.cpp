@@ -137,7 +137,6 @@ void OPENCHART::createMenuBar()
 {
 	QWidget* widget = new QWidget();
 	widget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-	
 }
 
 void OPENCHART::createStatusBar()
@@ -173,25 +172,22 @@ void OPENCHART::openFile()
 		".", tr("Microsoft Excel Forms(*.xlsx);\n\
 				 JavaScript Object Notation(*.json)\n\
 				Comma-Separated Values(*.csv)"));
-	if (filePath.isEmpty())
-	{
+	if (filePath.isEmpty()) {
 		QMessageBox::warning(this, tr("OpenFile"), tr("Empty File Path."), QMessageBox::Yes);
 	}
-	else
-	{
+	else {
 		loadFileByName(filePath);
 	}
 }
 
-
 void OPENCHART::initPropertyTreeWidget()
 {
-	/*
-	1-----lineedit
-	2-----combobox
-	3-----colorpicker
-	4-----lineedit
-	*/
+/**
+ * 1-----lineedit
+ * 2-----combobox
+ * 3-----colorpicker
+ * 4-----lineedit
+*/
 	enum WidgetType
 	{
 		LineEdit=1,

@@ -2,7 +2,7 @@
 	Authur: zhu wenqiang
 
 	This file is the implementation file of the functional namespace DataProcess 
-	in which the core data process functions are declared.
+	where the core data process functions are declared.
 
 	all kinds of chart get its json data changed here.
 */
@@ -62,10 +62,10 @@ namespace DataProcess
 			{
 				xAxisDataArr.append(dataList[i][0].toString());
 			}
-			(*json).replace(OptionIdentity::xAxis::data, xAxisDataArr);
-			(*json).replace(OptionIdentity::legend::data, legendDataArr);
-			(*json).replace(OptionIdentity::option::series, seriesArr);
-			emit(*json).valueChanged();
+			json->replace(OptionIdentity::xAxis::data, xAxisDataArr);
+			json->replace(OptionIdentity::legend::data, legendDataArr);
+			json->replace(OptionIdentity::option::series, seriesArr);
+			emit json->valueChanged();
 		};
 
 		const QList<QVariant>& header = dataList[0];
@@ -113,9 +113,9 @@ namespace DataProcess
 			dataObj.insert("value", var.last().toFloat());
 			dataArr.append(dataObj);
 		}
-		(*json).replace(OptionIdentity::legend::data, legendDataArr);
-		(*json).replace(OptionIdentity::series::data, dataArr);
-		emit(*json).valueChanged();
+		json->replace(OptionIdentity::legend::data, legendDataArr);
+		json->replace(OptionIdentity::series::data, dataArr);
+		emit json->valueChanged();
 	}
 
 	void dataForScatter(const QList<QList<QVariant>>& dataList, JsonObject* json)
@@ -192,10 +192,10 @@ namespace DataProcess
 		//	//yAxisDataArr.append(yAxisDataList[i]);
 		//}
 
-		(*json).replace(OptionIdentity::series::data, data);
+		json->replace(OptionIdentity::series::data, data);
 		//(*json).replace(OptionIdentity::xAxis::data, xAxisDataArr);
 		//(*json).replace(OptionIdentity::yAxis::data, yAxisDataArr);
-		emit(*json).valueChanged();
+		emit json->valueChanged();
 	}
 
 	void dataForFlow(const QList<QList<QVariant>>& dataList, JsonObject* json)
@@ -213,8 +213,8 @@ namespace DataProcess
 			}
 			dataArr.append(dataItem);
 		}
-		(*json).replace(OptionIdentity::series::data, dataArr);
-		emit(*json).valueChanged();
+		json->replace(OptionIdentity::series::data, dataArr);
+		emit json->valueChanged();
 	}
 
 	void dataForKLine(const QList<QList<QVariant>>& dataList, JsonObject* json)
@@ -256,10 +256,10 @@ namespace DataProcess
 			seriesDataItem.append(rowList[closeIndex].toFloat());
 			seriesDataArr.append(seriesDataItem);
 		}
-		(*json).replace(OptionIdentity::xAxis::data, xAxisDataArr);
-		(*json).replace(OptionIdentity::series::data, seriesDataArr);
-		(*json).replace(OptionIdentity::series::name, dataList[1][codeIndex].toString());
-		(*json).replace(OptionIdentity::legend::data, dataList[1][codeIndex].toString());
+		json->replace(OptionIdentity::xAxis::data, xAxisDataArr);
+		json->replace(OptionIdentity::series::data, seriesDataArr);
+		json->replace(OptionIdentity::series::name, dataList[1][codeIndex].toString());
+		json->replace(OptionIdentity::legend::data, dataList[1][codeIndex].toString());
 		emit(*json).valueChanged();
 	}
 
@@ -274,7 +274,7 @@ namespace DataProcess
 			indicatorObj.insert("name", header[i].toString());
 			indicatorDataArr.append(indicatorObj);
 		}
-		(*json).replace(OptionIdentity::radar::indicator, indicatorDataArr);
+		json->replace(OptionIdentity::radar::indicator, indicatorDataArr);
 
 		QJsonArray seriesDataArr;
 		QJsonArray legendDataArr;
