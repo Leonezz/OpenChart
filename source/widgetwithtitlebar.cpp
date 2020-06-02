@@ -135,7 +135,7 @@ void WidgetWithTitleBar::createConnections()
 	QObject::connect(titlebar, &TitleBar::propertyWidgetActionTriggeredSignal,
 		mainWindow, &OPENCHART::setOptionDockWidgetVisable);
 	QObject::connect(titlebar, &TitleBar::commandLineActionTriggeredSignal,
-		mainWindow, &OPENCHART::setCommandLineDockWidgetvisable);
+		mainWindow, &OPENCHART::setCommandLineDockWidgetVisable);
 	QObject::connect(titlebar, &TitleBar::themeMenuActionTriggeredSignal,
 		mainWindow, &OPENCHART::chartThemeChangeSlot);
 	QObject::connect(mainWindow, &OPENCHART::isWidgetVisableSignal,

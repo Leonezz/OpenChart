@@ -6,7 +6,7 @@
 #endif
 
 TitleBar::TitleBar(QWidget* parent)
-	:QWidget(parent),icon(QIcon(":/yes_1296db_200.svg"))
+	:QWidget(parent), icon(QIcon(":/yes_1296db_200.svg"))
 {
 	this->setFixedHeight(28);
 	this->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
@@ -45,6 +45,7 @@ void TitleBar::mouseMoveEvent(QMouseEvent* event)
 	}
 	event->ignore();
 #else
+	//code for other platform here.
 #endif
 }
 
@@ -96,7 +97,7 @@ void TitleBar::donateActionTriggeredSlot()
 	QDesktopServices::openUrl(QUrl("file:///C:/Users/zhuWenQ/Desktop/Study/C++/Qt/OpenChart_demo/Untitled-1.html"));
 }
 
-void TitleBar::addAction(const QString& text, QMenu** parent, QAction** action,const QString& name)
+void TitleBar::addAction(const QString& text, QMenu** parent, QAction** action, const QString& name)
 {
 	(*action) = new QAction(text, this);
 	(*action)->setObjectName(name);
@@ -133,21 +134,21 @@ void TitleBar::createMenuBar()
 	m_menuBar->setContentsMargins(0, 0, 0, 0);
 	//m_menuBar->setGeometry(30, 0, 1000, 30);
 	//fileMenu
-	addMenu(tr("ÎÄ¼þ(&F)"), &m_menuBar, &m_fileMenu);
-	addAction(tr("´ò¿ªÎÄ¼þ"), &m_fileMenu, &a_openFileAction);
-	addAction(tr("´ò¿ªÎÄ¼þ¼Ð"), &m_fileMenu, &a_openFolderAction);
-	addAction(tr("±£´æ"), &m_fileMenu, &a_saveAction);
-	addAction(tr("Áí´æÎª"), &m_fileMenu, &a_saveAsAction);
-	addAction(tr("ÍË³ö"), &m_fileMenu, &a_quitAction);
-	
+	addMenu(tr("æ–‡ä»¶(&F)"), &m_menuBar, &m_fileMenu);
+	addAction(tr("æ‰“å¼€æ–‡ä»¶"), &m_fileMenu, &a_openFileAction);
+	addAction(tr("æ‰“å¼€æ–‡ä»¶å¤¹"), &m_fileMenu, &a_openFolderAction);
+	addAction(tr("ä¿å­˜"), &m_fileMenu, &a_saveAction);
+	addAction(tr("å¦å­˜ä¸º"), &m_fileMenu, &a_saveAsAction);
+	addAction(tr("é€€å‡º"), &m_fileMenu, &a_quitAction);
+
 	//windowsMenu
-	addMenu(tr("´°¿Ú(&W)"), &m_menuBar, &m_windowsMenu);
-	addAction(tr("×ÊÔ´¹ÜÀíÆ÷"), &m_windowsMenu, &a_resourceManagerAction, "ResourcesManager");
-	addAction(tr("Í¼±íÀàÐÍ"), &m_windowsMenu, &a_chartTypeAction, "ChartType");
-	addAction(tr("ÃüÁîÐÐ"), &m_windowsMenu, &a_commandLineAction, "CommandLine");
-	addAction(tr("ÅäÖÃÏî"), &m_windowsMenu, &a_propertyEditAction, "Property");
+	addMenu(tr("çª—å£(&W)"), &m_menuBar, &m_windowsMenu);
+	addAction(tr("èµ„æºç®¡ç†å™¨"), &m_windowsMenu, &a_resourceManagerAction, "ResourcesManager");
+	addAction(tr("å›¾è¡¨ç±»åž‹"), &m_windowsMenu, &a_chartTypeAction, "ChartType");
+	addAction(tr("å‘½ä»¤è¡Œ"), &m_windowsMenu, &a_commandLineAction, "CommandLine");
+	addAction(tr("é…ç½®é¡¹"), &m_windowsMenu, &a_propertyEditAction, "Property");
 	//themeMenu
-	addMenu(tr("Ö÷Ìâ(&T)"), &m_menuBar, &m_themeMenu);
+	addMenu(tr("ä¸»é¢˜(&T)"), &m_menuBar, &m_themeMenu);
 	QJsonObject themeList;
 	if (FileStream::readJson("./Resources/theme/themeList.json", &themeList))
 	{
@@ -164,11 +165,11 @@ void TitleBar::createMenuBar()
 
 
 	//helpMenu
-	addMenu(tr("°ïÖú(&H)"), &m_menuBar, &m_helpMenu);
-	addAction(tr("½Ì³Ì"), &m_helpMenu, &a_tutorialAction);
-	addAction(tr("¹ØÓÚ´ËÈí¼þ"), &m_helpMenu, &a_aboutThisAction);
+	addMenu(tr("å¸®åŠ©(&H)"), &m_menuBar, &m_helpMenu);
+	addAction(tr("æ•™ç¨‹"), &m_helpMenu, &a_tutorialAction);
+	addAction(tr("å…³äºŽæ­¤è½¯ä»¶"), &m_helpMenu, &a_aboutThisAction);
 	//donate
-	addAction(tr("¾èÔù"), &m_menuBar, &a_donateAction);
+	addAction(tr("æèµ "), &m_menuBar, &a_donateAction);
 }
 
 void TitleBar::createLabels()
@@ -180,7 +181,7 @@ void TitleBar::createLabels()
 	l_titleLabel = new QLabel(tr("OpenChart"), this);
 	l_titleLabel->setFixedHeight(30);
 	l_titleLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-	l_titleLabel->setFont(QFont("consolas",10));
+	l_titleLabel->setFont(QFont("consolas", 10));
 	l_titleLabel->setObjectName(QString::fromUtf8("Title"));
 }
 

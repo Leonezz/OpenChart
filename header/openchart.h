@@ -59,8 +59,9 @@ public slots:
 	void optionChangedSlot();
 	void initChart(QTreeWidgetItem* item, int column);
 	void updateStatusBar();
+	void setDockWidgetVisable(QDockWidget* widget);
 	void setChartTypeDockWidgetVisable();
-	void setCommandLineDockWidgetvisable();
+	void setCommandLineDockWidgetVisable();
 	void setOptionDockWidgetVisable();
 	void setFileViewDockWidgetVisable();
 	void isFileViewWidgetVisable(bool visable)

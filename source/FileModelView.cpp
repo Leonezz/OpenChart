@@ -4,20 +4,20 @@
 #include "header/JsonObject.h"
 #include "QGridLayout"
 FileModelView::FileModelView(QWidget* parent)
-	:QDockWidget(parent),isFileTreeLoaderCreated(false)
+	:QDockWidget(parent), isFileTreeLoaderCreated(false)
 {
 	//this->setAttribute(Qt::WA_DeleteOnClose);
-	this->setWindowTitle(tr("×ÊÔ´¹ÜÀíÆ÷"));
+	this->setWindowTitle(tr("èµ„æºç®¡ç†å™¨"));
 	this->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
-	button = new QPushButton(tr("´ò¿ªÎÄ¼þ¼Ð"), this);
+	button = new QPushButton(tr("æ‰“å¼€æ–‡ä»¶å¤¹"), this);
 	button->setObjectName("OpenFolder");
-	
+
 	this->setWidget(button);
 
 	QObject::connect(button, &QPushButton::clicked, this, &FileModelView::buildFileTree);
 	this->setObjectName("FileView");
-	
+
 	treeView = new QTreeWidget();
 	QObject::connect(treeView, &QTreeWidget::itemExpanded, this, &FileModelView::setFolderExpandIcon);
 	QObject::connect(treeView, &QTreeWidget::itemCollapsed, this, &FileModelView::setFolderCollapseIcon);
@@ -58,7 +58,7 @@ void FileModelView::createFileTreeLoader(const QString& path, QTreeWidget* widge
 	fileTreeLoader->isQuitRequested = false;
 	QObject::connect(fileTreeLoader, &LoadFileTreeInThreadPool::workDone, this, &FileModelView::receiveFileTree);
 	//start file loading process in globe thread pool
-	
+
 	QThreadPool::globalInstance()->start(fileTreeLoader);
 }
 
@@ -67,7 +67,7 @@ FileModelView::~FileModelView()
 	terminateFileTreeLoadProcess();
 }
 
-void FileModelView::loadFile(const QString& path,const int type)
+void FileModelView::loadFile(const QString& path, const int type)
 {
 	fileLoader = new LoadFilesInThreadPool(path, type);
 	QObject::connect(fileLoader, &LoadFilesInThreadPool::workDone, this, &FileModelView::sendFileDataSignal);
@@ -77,14 +77,14 @@ void FileModelView::loadFile(const QString& path,const int type)
 }
 
 void FileModelView::receiveFileTree(QTreeWidget* widget)
-{		
+{
 	//treeView = widget;//this statement init treeView
 
 	terminateFileTreeLoadProcess();
 
 	QString folderName = m_path.split("/").last();
-	const QString title = fileTreeLoader->isQuitRequested ? tr("×ÊÔ´¹ÜÀíÆ÷")+"   -   " + folderName + "(Incomplete)" :
-		tr("×ÊÔ´¹ÜÀíÆ÷") + "   -   " + folderName;
+	const QString title = fileTreeLoader->isQuitRequested ? tr("èµ„æºç®¡ç†å™¨") + "   -   " + folderName + "(Incomplete)" :
+		tr("èµ„æºç®¡ç†å™¨") + "   -   " + folderName;
 	this->setWindowTitle(title);
 	if (loading) {
 		loading->close();
@@ -155,10 +155,3 @@ void FileModelView::getFolderPath()
 	fileDialog->setFileMode(QFileDialog::Directory);
 	m_path = fileDialog->getExistingDirectory();
 }
-
-
-
-
-
-
-

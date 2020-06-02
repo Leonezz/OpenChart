@@ -347,7 +347,7 @@ void OPENCHART::initChart(QTreeWidgetItem* item, int column)
 	if (flag == 0)
 	{
 		/*
-		this statement stays here not the begin of this function.
+		this statement stays here not the top of this function.
 		otherwise curChartIndex may update a wrong value. 
 		*/
 		d_ptr->curChartIndex = item->text(2).toInt();	
@@ -358,28 +358,29 @@ void OPENCHART::initChart(QTreeWidgetItem* item, int column)
 	}
 }
 
-void OPENCHART::setChartTypeDockWidgetVisable()
+void OPENCHART::setDockWidgetVisable(QDockWidget* widget)
 {
-	ui.chartTypeDockWidget->isVisible() ? 
-		ui.chartTypeDockWidget->hide() : ui.chartTypeDockWidget->show();
+	widget->isVisible() ? widget->hide() : widget->show();
 }
 
-void OPENCHART::setCommandLineDockWidgetvisable()
+void OPENCHART::setChartTypeDockWidgetVisable()
 {
-	
-	 ui.commandLineConfigDockWidget->isVisible() ? 
-		 ui.commandLineConfigDockWidget->hide() : ui.commandLineConfigDockWidget->show();
+	setDockWidgetVisable(ui.chartTypeDockWidget);
+}
+
+void OPENCHART::setCommandLineDockWidgetVisable()
+{
+	setDockWidgetVisable(ui.commandLineConfigDockWidget);
 }
 
 void OPENCHART::setOptionDockWidgetVisable()
 {
-	ui.configDockWidget->isVisible() ? 
-		ui.configDockWidget->hide() : ui.configDockWidget->show();
+	setDockWidgetVisable(ui.configDockWidget);
 }
 
 void OPENCHART::setFileViewDockWidgetVisable()
 {
-	fileView->isVisible() ? fileView->hide() : fileView->show();
+	setDockWidgetVisable(fileView);
 }
 
 void OPENCHART::titleBarOpenFolderActionTriggered()
