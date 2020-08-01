@@ -326,7 +326,7 @@ void OPENCHART::initChart(QTreeWidgetItem* item, int column)
 	if (isOptionChanged&&isUserInput)
 	{
 		switch (QMessageBox::warning(this, tr("Warning!"),
-			tr("You are try to leave this page.\n Are you sure to leave without save your changes?"),
+			tr("You are trying to leave this page.\n Are you sure to leave without saving your changes?"),
 			QMessageBox::Save | QMessageBox::No|QMessageBox::Yes,
 			QMessageBox::Yes))
 		{
@@ -470,7 +470,13 @@ void OPENCHART::feedFileDataToJson(QList<QList<QVariant> > dataList)
 {
 	isOptionChanged = true;
 	isUserInput = true;
+	static void(* funcs[25])(const QList<QList<QVariant>>&, JsonObject*) = { DataProcess::dataForLine ,DataProcess::dataForBar ,DataProcess::dataForPie,DataProcess::dataForScatter ,DataProcess::dataForFlow ,DataProcess::dataForKLine ,
+		DataProcess::dataForRadar,DataProcess::dataForBoxplot,DataProcess::dataForHeatmap,DataProcess::dataForRelation,DataProcess::dataForTree,DataProcess::dataForTreeMap,
+	DataProcess::dataForSun ,DataProcess::dataForParallelCoordinates ,DataProcess::dataForSankey ,DataProcess::dataForFunnel ,DataProcess::dataForPolar,DataProcess::dataForRiver,
+	DataProcess::dataForCalendar ,DataProcess::dataForDataSet ,DataProcess::dataForBar3D ,DataProcess::dataForScatter3D ,DataProcess::dataForLine3D ,DataProcess::dataForScatter3D };
 	auto processAndFeedDataConcurrently = [&](const QList<QList<QVariant> >& list) {
+		funcs[d_ptr->curChartIndex](list, &d_ptr->option);
+		/*
 		switch (d_ptr->curChartIndex)
 		{
 		case Line:
@@ -548,6 +554,7 @@ void OPENCHART::feedFileDataToJson(QList<QList<QVariant> > dataList)
 		default:
 			break;
 		}
+		*/
 	};
 	//run data process function concurrently
 	QtConcurrent::run(processAndFeedDataConcurrently, dataList);

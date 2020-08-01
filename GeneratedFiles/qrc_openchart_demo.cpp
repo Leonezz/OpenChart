@@ -1,13 +1,13 @@
 /****************************************************************************
 ** Resource object code
 **
-** Created by: The Resource Compiler for Qt version 5.13.1
+** Created by: The Resource Compiler for Qt version 5.15.0
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 static const unsigned char qt_resource_data[] = {
-  // C:/Users/zhuWenQ/Desktop/Study/C++/Qt/OpenChart_mainWindow/OPENCHART/UI/openchart_widget.ui
+  // C:/Users/zhuWenQ/Desktop/GithubResource/OPENCHART/UI/openchart_widget.ui
   0x0,0x0,0x6,0x1f,
   0x3c,
   0x3f,0x78,0x6d,0x6c,0x20,0x76,0x65,0x72,0x73,0x69,0x6f,0x6e,0x3d,0x22,0x31,0x2e,

@@ -189,7 +189,7 @@ namespace DataProcess
 		//for (sizetype i = 0; i < xAxisDataList.length(); ++i)
 		//{
 		//	xAxisDataArr.append(xAxisDataList[i]);
-		//	//yAxisDataArr.append(yAxisDataList[i]);
+		//	yAxisDataArr.append(yAxisDataList[i]);
 		//}
 
 		json->replace(OptionIdentity::series::data, data);

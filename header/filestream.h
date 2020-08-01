@@ -7,18 +7,9 @@
 
 namespace FileStream
 {
-	inline bool readExcel(const QString& filepath, QList<QList<QVariant> >* dataList);
-	inline QJsonObject readJson(const QString& filepath);
-	inline bool readJson(const QString& filepath, QJsonObject* jsonObj);
-	inline QList<QList<QVariant> > readCsv(const QString& filepath);
-	inline QList<QList<QVariant> > readTxt(const QString& filepath);
-	inline void writeFile(const QString& fileName);
-};
-namespace FileStream
-{
 	bool readExcel(const QString& filepath, QList<QList<QVariant> >* dataList)
 	{
-		bool fileError = true;
+		bool fileError = false;
 		if (!filepath.isEmpty())
 		{
 			QAxObject* excel=new QAxObject();	//
@@ -84,9 +75,10 @@ namespace FileStream
 				delete workBook;
 				delete workBooks;
 				delete excel;
-				return fileError;
+				fileError = true;
 			}
 		}
+		return fileError;
 	}
 	QJsonObject readJson(const QString& filepath)
 	{

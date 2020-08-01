@@ -14,7 +14,7 @@ namespace DataProcess
 	/*
 
 	*/
-	typedef std::size_t sizetype;
+	using sizetype = std::size_t;
 	void dataForLine(const QList<QList<QVariant> >&, JsonObject*);
 	void dataForBar(const QList<QList<QVariant> >&, JsonObject*);
 	void dataForPie(const QList<QList<QVariant> >&, JsonObject*);

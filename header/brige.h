@@ -21,7 +21,7 @@ public:
 	}
 	
 /*
-	this signal will emit from c++ side and be recieved on the HTML side.
+	this signal will emit from c++ side and recieved by the HTML side.
 */
 signals:
 	void sendMsg(const QString& text);
