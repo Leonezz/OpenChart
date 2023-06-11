@@ -11,9 +11,9 @@ A Qt and ECharts study project.
 
 ## Background
 
-When I study Qt, I code on this project.
+This is a toy software based on the Qt framework, the initial motivation is to learn Qt and C++ programming.
 
-This project is actually a software that makes charts based on data from the user. And the kernel of this project is a open source project named [ECharts](https://github.com/apache/incubator-echarts).
+This project is a software that makes charts based on data from local files, the kernel is an open source project named [ECharts](https://github.com/apache/incubator-echarts).
 
 A short introduction of ECharts:
 
@@ -50,9 +50,6 @@ You can download the released zip of this softwore from the release page, or you
     or from the GUI interaction(not ready yet).
 
     ![GUI](https://raw.githubusercontent.com/Leonezz/OpenChart/master/ExampleImg/GUI.png)
-   
-
-- The functions are not finshed yet.
   
 
 ## Some Examples
